@@ -1,10 +1,8 @@
 # 英行跡
 
-# 你所看過的，必留下痕跡
-#
+你所看過的，必留下痕跡
 
-
-意 念︰
+# 意 念︰
 
 開發協助用戶背英單詞的應用程式。
 
@@ -12,31 +10,8 @@
 
 希望開發出和腦海中的英文詞庫，可以逐漸同步，並協助溫習的工具。
 
-資料來源 (背境建立) :
-
-__1\.  單詞變化形對照表\(lemma\.en\.txt\)__
-
-https://github\.com/skywind3000/ECDICT
-
-__2\.  單詞釋意及來內來自劍橋網絡字典__
-
-https://dictionary\.cambridge\.org/dictionary/english\-chinese\-traditional/
-
-__3\.  EF 英語字彙表__
-
-https://www\.ef\.com\.tw/english\-guide/english\-vocabulary/
-
-__4\.  1,000 most common US English words__
-
-https://gist\.github\.com/deekayen/4148741
-
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
-
-# GUI架構
-由eng_track.py 為入口，跳出的GUI窗戶，控制其他檔案中的程式。
-如不想更改這APP，從這裡執行就好了。
-
 # 使用說明︰
+
 1. 第一次執行一定要建環境
     sqlite資料庫是建立表格時才產生，再滙入csv檔的基本資料。
 
@@ -89,105 +64,22 @@ article\,conjunction\, interjection\,prefix\, suffix\,exclamation
 
     目前只依skywind3000在Github上發布的資料作出處理，演化成這個功能。沒有找到更好的資料來源，如用戶有更好來源，請自行更改。
 
-# 結構解釋 :
-# 表格
-1. lemma  存變形體和本體的對比
-2. joining  存用戶看過但未分類的
-3. trash  存用戶看過但屬性不重要的
-4. spelling  用戶分類過，會有機會抽背的
+# 程式結構
 
-# 欄位
-trans  變形體
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/06.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/07.png)
 
-words  單字本體
+# 使用時的畫面
 
-attribute  單字屬性
-
-transaltion   中文解釋
-
-article  文章名
-
-JOtime    輸入的時間
-
-INtime    評級的時間
-
-UPtime    溫習過的時間
-
-DItime    查過字典的時間
-
-# 輸入流程
-
-1\.文章內部去重覆字
-
-2\.還原變化形
-
-3\.對比資料庫沒有重覆
-
-4\.新單字查字典
-
-5\.按屬性存取字典內容
-
-6\.更新查字典時間
-
-按文章︰
-1 > 2 > 3 > 4 > 5
-
-按查字典︰
-2 > 4 > 顯示 > 3 >
-__\(__  __對比資料庫 有 重覆  > 6__) / 
-__\( 對比資料庫 沒 重覆  > 5 \+ 6 \)__
-
-
-# 評級流程
-
-__轉移表格   \+   紀錄時間__
-
-# 抽背流程
-
-__1. 顯示 文章名__
-
-__2. 顯示 各評級  單字數__
-
-__3. 取得 各評級  所要求的單字__  __個數__
-
-__4. 取得__  __各__  __評級中 所有 id__
-
-__5. 隨機抽 各評級 要求個數 的 id__
-
-__6. 按 id 去拿出單字資料__
-
-__7. 溫習 \+ 記錄時間 \+ 測驗__
-
-__8. 重新評分  >  更新評分等級__
-
-
-按文章 :      1 \- 8
-
-按評級 :      2 \- 8
-
-按時間 : __\(輸入/評級/抽背過/查字典\)__
-
-a \)  顯示該欄時間的最大最小值
-
-b \)  取用戶所選的範圍
-
-c \)  重覆 2 \- 8
-
-# 圖表流程
-
-取各表的字數  >  圓形圖
-
-取spelling的各等級的字數  >圓形圖
-
-取時間   :    
-
-__1__  __判斷今天的時間，要過去六天日期。
-
-__2__  __在 joining 和 spelling 的__  __輸入時間\(JOtime\)     >__  __七天__  __數據__
-
-__3__  __從 joining 到 spelling 的 \(INtime\) 數據    >    七天數據__
-
-__4 從 spelling 的 \(UPtime\)  >    七天數據__
-
-__5 從 spelling 的\(DItime\)     >    七天數據__
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/08.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/09.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/10.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/11.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/12.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/13.png)
 
