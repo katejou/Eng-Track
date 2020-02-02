@@ -6,13 +6,16 @@
 
 開發協助用戶背英單詞的應用程式。
 
-經常看英文文章，遇到不認識的字，不會立刻去查。看完整篇，忘記它所在的位置。久而久之，那個字在腦海中在模糊的印象，但是因為拼不出來，所以閱讀的能力和寫作的能力不成正比。
+經常看英文文章，遇到不認識的字，不會立刻去查。看完整篇，忘記它所在的位置。
+
+久而久之，那個字在腦海中在模糊的印象，但是因為拼不出來，所以閱讀的能力和寫作的能力不成正比。
 
 希望開發出和腦海中的英文詞庫，可以逐漸同步，並協助溫習的工具。
 
 # 使用說明︰
 
-1. 第一次執行一定要建環境
+1. 第一次執行一定要建環境:
+
     sqlite資料庫是建立表格時才產生，再滙入csv檔的基本資料。
 
 2. 以檔案輸入的文字處理︰
@@ -71,16 +74,37 @@ article\,conjunction\, interjection\,prefix\, suffix\,exclamation
 
 # 資料庫結構︰
 
+表格
+
+1. lemma  存變形體和本體的對比
+
+2. joining  存用戶看過但未分類的
+
+3. trash  存用戶看過但屬性不重要的
+
+4. spelling  用戶分類過，會有機會抽背的
+
+欄位
+trans  變形體
+
+words  單字本體
+
+attribute  單字屬性
+
+transaltion   中文解釋
+
+article  文章名
+
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
 
-# 程式流程︰
+# 主要程式流程︰
 
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
 
-# 使用時的部份畫面︰
+# 主要使用畫面︰
 
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/08.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/09.png)
