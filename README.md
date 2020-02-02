@@ -30,7 +30,7 @@ __4\.  1,000 most common US English words__
 
 https://gist\.github\.com/deekayen/4148741
 
-![image] https://github.com/katejou/eng-track/blob/master/introPhoto/01.png
+[image] https://github.com/katejou/eng-track/blob/master/introPhoto/01.png
 
 # GUI架構
 由eng_track.py 為入口，跳出的GUI窗戶，控制其他檔案中的程式。
