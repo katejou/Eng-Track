@@ -1,5 +1,7 @@
 *.sqlite
-*.png
+ET.png
+LV.png
+FQ.png
 *.ico
 *.txt
 
