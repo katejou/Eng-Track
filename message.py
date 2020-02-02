@@ -326,8 +326,7 @@ def fq_Intro():
     Consulted : 查字典的總字數，
                 \t\t-- 不論該單字分級已否，或由查字典新加入。
                 
-    *各總字數 :  只包括屬性(attribute)有用
-                \t\t-- 不包括在trash表格的單詞。
+    *各總字數 :  不包括在trash和lemma表格的單詞。
     
     '''
     return title,context   
