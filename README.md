@@ -14,11 +14,13 @@
 
 # 使用說明︰
 
-1. 第一次執行一定要建環境:
+由eng_track.py 為入口，跳出的GUI窗戶，控制其他檔案中的程式。如不想更改這APP，從這裡單純執行就好了。
 
-    sqlite資料庫是建立表格時才產生，再滙入csv檔的基本資料。
+1. 第一次執行一定要做「建環境」(選單之一):
 
-2. 以檔案輸入的文字處理︰
+    sqlite資料庫是建立表格時才產生，再自動滙入三個csv檔為基本資料。
+
+2. 以「檔案輸入」的文字處理︰
 
     遇到文中所有不是英文字元的地方都會被切開成一個單字。
 
@@ -28,7 +30,7 @@
 
     例︰Peter Pan\(彼得潘\)會被切為 Peter 和 Pan。
 
-3. 以查字典輸入的文字處理︰ Peter Pan 能夠被一起辨別。
+3. 以「查字典輸入」的文字處理︰ Peter Pan 能夠被一起辨別。
 
     但是單查 Kate 等人名，會查不到結果。	除非該人名有別的意義，例︰
 
@@ -38,14 +40,15 @@
 
     目標屬性︰  noun\,verb\,adverb\,adjective
 
-    但是如果單字的屬性包含︰   preposition\,determiner\, auxiliary verb\,pronoun\,
-article\,conjunction\, interjection\,prefix\, suffix\,exclamation
+    但是如果單字的屬性包含︰   
+    
+    preposition\,determiner\, auxiliary verb\,pronoun\,article\,conjunction\, interjection\,prefix\, suffix\,exclamation
 
     將歸到垃圾箱\(trash\)表格，並不會出現在可以背的單詞中。
 
     垃圾箱的存在， 是避免將來會再次浪費爬蟲的時間。
 
-5.  文章名預設︰  \(文章名用於 ' 依文章抽背文字 '\)
+5.  文章名預設︰  \(文章名用於「依文章抽背單字」\)
 
     5.1 以  ' 從檔案 ' 輸入的單字，預設為︰' 檔名\.txt '   \(不包涵路徑\)
 
