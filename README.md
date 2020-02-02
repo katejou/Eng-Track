@@ -66,15 +66,21 @@ article\,conjunction\, interjection\,prefix\, suffix\,exclamation
 
 # 程式結構
 
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/06.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/07.png)
 
-# 使用時的畫面
+# 資料庫結構︰
+
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
+
+# 程式流程︰
+
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
+
+# 使用時的部份畫面︰
 
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/08.png)
 ![image](https://github.com/katejou/eng-track/blob/master/introPhoto/09.png)
