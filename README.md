@@ -40,6 +40,9 @@ matplotlib                    3.1.1
     
     python version : 3.7.4.final.0
 
+P.S. 我已經試過打包它成為一個執行檔，但是pyinstall這工具打包了太多anaconda中用不到的東西進去了，所以檔案太大，不好放上來。
+
+
 
 1. 第一次執行一定要做「建環境」(選單之一):
 
