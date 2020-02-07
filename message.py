@@ -187,7 +187,7 @@ def page7():
     
     取以上兩者不重覆共 2,957個單字，
     結合劍橋網絡字典解釋。
-    放入可抽背的 speling 表格，預設評級為 1。
+    放入可抽背的 spelling 表格，預設評級為 1。
     """
     return title,context
 
@@ -197,7 +197,7 @@ def inputfile():
     title = "\n\n輸入檔案"
     context = """\n
     \t請輸入路徑及檔名，如與此程式同路徑，只要檔名\n
-    格式限.txt，路徑及檔名為全英文。
+    格式限.txt，路徑及檔名為全英文。(記得打副檔名)
     \n\n\t(平均 1 個新字需要 1 秒。請耐心等候。) 
     """
     return title,context
