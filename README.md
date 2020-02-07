@@ -16,19 +16,40 @@
 
 由eng_track.py 為入口，跳出的GUI窗戶可以控制其他檔案中的程式。如不想更改這應用程式，從這裡單純執行就好了。
 
-注意運行的環境是window有Python3,加tkinter,matplotlib,sqlite的套件前提下。
+注意運行的環境是win 64加 python 3和套件︰
 
-(如果還是不行，建議下載個anaconda，因為我是從那個環境開發的，一定可以跑。)
+sqlite                        3.30.1
+
+selenium               		  3.141.0
+
+bs4                           0.0.1
+
+tkinter                       8.6
+
+PIL 	                      7.0.0
+
+numpy                         1.18.1
+
+matplotlib                    3.1.1
+
+(如果還是不行，建議下載個anaconda，因為我是從那個環境開發的，一定可以跑。而且已經內建好所有套件。)
+
+    conda version : 4.8.1
+    
+    conda-build version : 3.18.9
+    
+    python version : 3.7.4.final.0
+
 
 1. 第一次執行一定要做「建環境」(選單之一):
 
-    sqlite資料庫是建立表格時才產生，再自動滙入三個csv檔為基本資料。
+    sqlite資料庫是「建環境」時才產生，它會建好表格再滙入三個csv檔為基本資料。
     
-    lemma.csv   去變化形資料
+    lemma.csv   存變化形對照表資料
     
-    trash.csv   基本詞彙中，屬性不合的
+    trash.csv   存基本詞彙中，屬性不需要背誦的
     
-    basic.csv   基本詞彙中，屬性相合的
+    basic.csv   存基本詞彙中，屬性應該背誦的
     
     如果你有更好的資料來源︰如你認為基本單字量不夠，變化詞對換表不夠精準等。
     
