@@ -781,7 +781,9 @@ def turn_page_button21():        # 按查字典時間
     global no
     no = 21 
     turn_page()  
-    
+
+def but_sw_enter(event):         # bind keyboard enter event equal to button
+    but_sw()
 #------------------------------------------------------------------ window start--------------------------
 # open the window
 root = tk.Tk()
@@ -816,6 +818,7 @@ text.config(state='disabled')
 # button (right)
 b = tk.Button(frame2, text='Enter',font = ('Arial',12), width = 10,command = but_sw)    
 b.pack(side = 'right' , fill = 'both', expand=False)
+root.bind("<Return>",but_sw_enter)             # bind keyboard enter event equal to button
 # entry box (middle)
 v1 = StringVar()
 e = tk.Entry(frame2,textvariable = v1,width = 18, font="Arial 14 bold")
