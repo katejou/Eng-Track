@@ -22,7 +22,7 @@ requests                      2.22.0
 
 selenium               		  3.141.0
 
-bs4                           0.0.1
+beautifulsoup4	              4.8.0	
 
 PIL 	                      7.0.0
 
@@ -31,7 +31,7 @@ numpy                         1.18.1
 matplotlib                    3.1.1
 
 
-(如果還是不行，建議下載個anaconda，因為我是從那個環境開發的，一定可以跑。而且已經內建好所有套件。)
+(如果還是不行，建議下載個 anacond。因為我是從那個環境開發的，一定可以跑。而且已經內建好所有套件，除了selenium 要自己加。)
 
     conda version : 4.8.1
     
