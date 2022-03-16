@@ -12,15 +12,70 @@
 
 希望開發出和腦海中的英文詞庫，可以逐漸同步，並協助溫習的工具。
 
-# 使用說明︰
+# 程式結構
 
-由eng_track.py 為入口，跳出的GUI窗戶可以控制其他檔案中的程式。如不想更改這應用程式，從這裡單純執行就好了。
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/06.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/07.png)
 
-注意運行的環境是win 64加 python 3.7和其他套件︰
+# 資料庫結構︰
+
+表格
+
+1. lemma  存變形體和本體的對比
+
+2. joining  存用戶看過但未分類的
+
+3. trash  存用戶看過但屬性不重要的
+
+4. spelling  用戶分類過，會有機會抽背的
+
+欄位
+
+trans  變形體
+
+words  單字本體
+
+attribute  單字屬性
+
+transaltion   中文解釋
+
+article  文章名
+
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
+
+# 主要程式流程︰
+
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
+
+# 主要使用畫面︰
+
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/08.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/09.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/10.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/11.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/12.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/13.png)
+![image](https://github.com/katejou/eng-track/blob/master/introPhoto/14.png)
+
+
+# 運行環境︰
+
+下載個 anacond ，當我開發的時候是以
+
+    conda version : 4.8.1
+    
+    conda-build version : 3.18.9
+    
+    python version : 3.7.4.final.0
+
+和 其他套件運行︰
 
 requests                      2.22.0
 
-selenium               		  3.141.0
+selenium               		  3.141.0  <-- 這個套件要自己加
 
 beautifulsoup4	              4.8.0	
 
@@ -31,17 +86,11 @@ numpy                         1.18.1
 matplotlib                    3.1.1
 
 
-(如果還是不行，建議下載個 anacond。因為我是從那個環境開發的，一定可以跑。而且已經內建好所有套件，除了selenium 要自己加。)
+# 使用說明︰
 
-    conda version : 4.8.1
-    
-    conda-build version : 3.18.9
-    
-    python version : 3.7.4.final.0
+由 eng_track.py 為入口，跳出的GUI窗戶可以控制其他檔案中的程式。如不想更改這應用程式，從這裡單純執行就好了。
 
-P.S. 我已經試過打包它成為一個執行檔，但是pyinstaller這工具打包了太多anaconda中用不到的東西進去了，所以檔案太大，不好放上來。
-
-
+(我已經試過打包它成為一個執行檔，但是pyinstaller這工具打包了太多anaconda中用不到的東西進去了，所以檔案太大，不好放上來。)
 
 1. 第一次執行一定要做「建環境」(選單之一):
 
@@ -110,51 +159,3 @@ P.S. 我已經試過打包它成為一個執行檔，但是pyinstaller這工具�
     目前只依skywind3000在Github上發布的資料作出處理，演化成這個功能。沒有找到更好的資料來源，如用戶有更好來源，請自行更改。
     
     (詳見第一項使用說明。)
-
-# 程式結構
-
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/06.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/07.png)
-
-# 資料庫結構︰
-
-表格
-
-1. lemma  存變形體和本體的對比
-
-2. joining  存用戶看過但未分類的
-
-3. trash  存用戶看過但屬性不重要的
-
-4. spelling  用戶分類過，會有機會抽背的
-
-欄位
-
-trans  變形體
-
-words  單字本體
-
-attribute  單字屬性
-
-transaltion   中文解釋
-
-article  文章名
-
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/02.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/01.png)
-
-# 主要程式流程︰
-
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/03.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/04.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/05.png)
-
-# 主要使用畫面︰
-
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/08.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/09.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/10.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/11.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/12.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/13.png)
-![image](https://github.com/katejou/eng-track/blob/master/introPhoto/14.png)
